@@ -1,10 +1,8 @@
-// gsap.from('.image', {x:-80, duration:2,   ease:'power2.inOut'});
-
 document.addEventListener("DOMContentLoaded", function () {
     const backToTop = document.querySelector('#back-to-top');
 
     window.addEventListener("scroll", function () {
-        if ((window.pageYOffset) >= 300) {
+        if (window.pageYOffset >= 300 && window.innerWidth >= 800) {
         backToTop.style.display = "block";
     } else {
         backToTop.style.display = "none";
@@ -20,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const left = document.querySelector('#left');
 const right = document.querySelector('#right');
 
-const photos = ['sert1.jpg', 'sert2.jpg', 'sert3.jpg', 'sert4.jpg', 'sert5.jpg', 'sert6.jpg', 'sert7.jpg', 'sert8.jpg', 'sert9.jpg', 'sert10.jpg'];
+const photos = ['https://serov.yachts/Images/sert1.jpg', 'https://serov.yachts/Images/sert2.jpg', 'https://serov.yachts/Images/sert3.jpg', 'https://serov.yachts/Images/sert4.jpg', 'https://serov.yachts/Images/sert5.jpg', 'https://serov.yachts/Images/sert6.jpg', 'https://serov.yachts/Images/sert7.jpg', 'https://serov.yachts/Images/sert8.jpg', 'https://serov.yachts/Images/sert9.jpg', 'https://serov.yachts/Images/sert10.jpg'];
 
 let i=0;
 
