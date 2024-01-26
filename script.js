@@ -15,6 +15,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburgerIcon = document.querySelector('.hamburger-icon');
+    const menu = document.querySelector('.menu');
+
+    hamburgerIcon.addEventListener('click', function () {
+        menu.classList.toggle('active');
+    });
+});
+
 const left = document.querySelector('#left');
 const right = document.querySelector('#right');
 
