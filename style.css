@@ -5,6 +5,7 @@
 
 body {
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 .back-to-top {
@@ -229,6 +230,15 @@ ul {
 
 .art {
     width: 300px;
+}
+
+.container_articles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article {
+    padding: 15px 15px 15px 0;
 }
 
 .accordion {
