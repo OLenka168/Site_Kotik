@@ -1,3 +1,7 @@
+document.addEventListener('contextmenu', event => {
+    event.preventDefault();
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     const backToTop = document.querySelector('#back-to-top');
 
@@ -15,19 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburgerIcon = document.querySelector('.hamburger-icon');
-    const menu = document.querySelector('.menu');
-
-    hamburgerIcon.addEventListener('click', function () {
-        menu.classList.toggle('active');
-    });
-});
-
 const left = document.querySelector('#left');
 const right = document.querySelector('#right');
 
-const photos = ['https://serov.yachts/Images/sert1.jpg', 'https://serov.yachts/Images/sert2.jpg', 'https://serov.yachts/Images/sert3.jpg', 'https://serov.yachts/Images/sert4.jpg', 'https://serov.yachts/Images/sert5.jpg', 'https://serov.yachts/Images/sert6.jpg', 'https://serov.yachts/Images/sert7.jpg', 'https://serov.yachts/Images/sert8.jpg', 'https://serov.yachts/Images/sert9.jpg', 'https://serov.yachts/Images/sert10.jpg'];
+const photos = ['./Images/sert1.jpg', './Images/sert2.jpg', './Images/sert3.jpg', './Images/sert4.jpg', './Images/sert5.jpg', './Images/sert6.jpg', './Images/sert7.jpg', './Images/sert8.jpg', './Images/sert9.jpg', './Images/sert10.jpg'];
 
 let i=0;
 
